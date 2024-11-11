@@ -1,0 +1,188 @@
+/*! -----------------------------------------------------------------------------------
+
+    Template Name: Cuba Admin
+    Template URI: http://admin.pixelstrap.com/cuba/theme
+    Description: This is Admin theme
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+
+-----------------------------------------------------------------------------------
+ */
+
+@import 'bootstrap';
+@import './vendors/prism.scss';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import 'font-awesome/css/font-awesome.min.css';
+@import 'theme/variables';
+@import 'components/buttons.scss';
+@import 'components/alert';
+@import 'components/card.scss';
+@import 'components/color.scss';
+@import 'components/dropdown.scss';
+@import 'components/popover.scss';
+@import 'components/tab.scss';
+@import 'components/table.scss';
+@import 'components/tree';
+@import 'components/according';
+@import 'theme/document.scss';
+@import 'theme/responsive';
+@import 'theme/dark.scss';
+@import '~photoswipe/dist/photoswipe.css';
+@import 'rc-tree/assets/index.css';
+@import '~react-dropzone-uploader/dist/styles.css';
+
+.small-elements-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.search-input {
+  .input-group {
+    position: relative;
+  }
+
+  .form-control {
+    color: #7366ff !important;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    [class='dark-only'] & {
+      background-color: #222132;
+    }
+  }
+
+  .suggetion-box {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    z-index: 5;
+    border-radius: 20px !important;
+    padding: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 14%);
+
+    [class='dark-only'] & {
+      background-color: $dark-body-background;
+    }
+
+    p {
+      padding: 6px 0px;
+      margin-bottom: 0px;
+    }
+
+    .suggestion-list {
+      max-height: 225px;
+      overflow: auto;
+
+      .suggetion-item {
+        margin-bottom: 0;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+span {
+  &.bold {
+    font-weight: bold;
+  }
+}
+
+.scrollbar-container {
+  height: 300px;
+  position: relative;
+  overflow: auto;
+}
+
+.content .badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 12px;
+  margin-top: -4px;
+}
+
+.badge-primary-light {
+  background-color: rgba(115, 102, 255, 0.14);
+  color: #7366ff;
+}
+
+.title-with-link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.pswp img {
+  max-width: none;
+  object-fit: contain;
+}
+
+.range-slider {
+  margin-bottom: 50px;
+}
+
+.dzu-dropzone {
+  border: 2px dashed var(--theme-deafult) !important;
+  background: rgba($primary-color, 0.2);
+  overflow: auto !important;
+  border: 2px dotted purple !important;
+
+  .dz-message {
+    .note {
+      background-color: $transparent-color;
+    }
+  }
+}
+
+.dzu-inputLabel {
+  color: var(--theme-deafult) !important;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.dzu-previewContainer {
+  padding: 30px !important;
+  min-height: 115px;
+}
+
+.dzu-inputLabelWithFiles {
+  margin-left: 30px !important;
+  background-color: var(--theme-deafult) !important;
+  color: $white !important;
+}
+
+.dzu-submitButton {
+  background-color: var(--theme-deafult) !important;
+
+  &:disabled {
+    background-color: #e6e6e6 !important;
+  }
+}
+
+.rc-tree-list {
+  img {
+    width: 15px;
+    height: auto;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+
+#basic-addon2 {
+  z-index: 7;
+}
+
+.credits-list {
+  list-style: none;
+}
