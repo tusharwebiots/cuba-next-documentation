@@ -7,7 +7,7 @@ const FolderStructure = () => {
 
   return (
     <div classname='row'>
-      <tree multiple draggable treedata='{treeData}' defaultexpandedkeys='{defaultExpandKeys}' autoexpandparent>
+      <Tree multiple draggable treedata='{treeData}' defaultexpandedkeys='{defaultExpandKeys}' autoexpandparent>
         <div id='pages' classname='col-12'>
           <h4 classname='sub-title' id='pages'>
             Pages
@@ -62,7 +62,7 @@ const FolderStructure = () => {
             folder to find all JSON files.
           </p>
         </div>
-      </tree>
+      </Tree>
     </div>
   );
 };
